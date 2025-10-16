@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pastafe</title>
+  <link rel="icon" type="image/webp" href="images/mycar.webp" />
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #ffbcd2;
+      color: #1c1c1c;
+      overflow-x: hidden;
+    }
+
+    header {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 25px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      z-index: 10;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #2d2438;
+      font-weight: 500;
+      font-size: 1.15rem;
+      transition: opacity 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      opacity: 0.7;
+    }
+
+    main {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .logo-container {
+      position: relative;
+      z-index: 2;
+      margin-bottom: -60px; /* لوگو روی ماشین بیاد */
+    }
+
+    .logo-text {
+      font-size: 5.8rem;
+      font-weight: 700;
+      color: #2d2438;
+      text-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .car-container {
+      position: relative;
+      z-index: 1;
+    }
+
+    .car-image {
+      width: 70%;
+      max-width: 1000px;
+      height: auto;
+      filter: drop-shadow(0 15px 25px rgba(0, 0, 0, 0.2));
+    }
+
+    section {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.7rem;
+      margin-bottom: 25px;
+      color: #2d2438;
+    }
+
+    section p {
+      max-width: 800px;
+      font-size: 1.2rem;
+      color: #333;
+      line-height: 1.7;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 0;
+      color: #333;
+      font-size: 1rem;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* ---------- Responsive ---------- */
+    @media (max-width: 768px) {
+      header {
+        justify-content: center;
+        padding: 15px;
+      }
+
+      nav ul {
+        gap: 20px;
+      }
+
+      nav ul li a {
+        font-size: 1rem;
+      }
+
+      .logo-text {
+        font-size: 3.8rem;
+      }
+
+      .car-image {
+        width: 90%;
+      }
+
+      section h2 {
+        font-size: 2rem;
+      }
+
+      section p {
+        font-size: 1rem;
+        padding: 0 10px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .logo-text {
+        font-size: 3rem;
+      }
+
+      .car-image {
+        width: 95%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="home">
+    <div class="logo-container">
+      <h1 class="logo-text">pastafe</h1>
+    </div>
+    <div class="car-container">
+      <img src="images/mycar.webp" alt="Pastafe Car" class="car-image" />
+    </div>
+  </main>
+
+  <section id="about">
+    <h2>About Pastafe</h2>
+    <p>
+      Pastafe blends design and performance into a seamless automotive experience.
+      Our passion lies in creating cars that feel as good to drive as they look.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>
+      Have questions or feedback? We'd love to hear from you.<br />
+      Email us at <b>hello@pastafe.com</b>
+    </p>
+  </section>
+
+  <footer>
+    © 2025 Pastafe. All rights reserved.
+  </footer>
+</body>
+</html>
